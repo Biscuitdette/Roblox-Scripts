@@ -1,0 +1,50 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Biscuitdette Touch Soccer", HidePremium = true, IntroText = "Fait par Biscuitdette#0001", SaveConfig = false, ConfigFolder = "ZCH"})
+local Main = Window:MakeTab({
+	Name = "Accueil",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local MainSection = Main:AddSection({
+	Name = "Accueil"
+})
+ 
+Main:AddToggle({
+Name = "Collecter automatiqement les jetons",
+Default = false,
+Callback = function(col)
+if col then
+_G.collect = true
+while _G.collect == true do
+wait()
+for _,v in pairs(game:GetService("Workspace").Coins:GetDescendants()) do
+if v:IsA("TouchTransmitter") then
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0) --0 is touch
+wait()
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 1) -- 1 is untouch
+end
+end
+end
+else
+_G.collect = false
+end
+end})
+ 
+Main:AddSlider({
+Name = "Changer la vitesse (la vitesse normal est de 16 %)",
+Min = 16,
+Max = 150,
+Default = 16,
+Increment = 1,
+ValueName = "% de vitesse",
+Callback = function(ws)
+while wait() do
+local lp = game.Players.LocalPlayer.Name
+local args = {
+    [1] = lp,
+    [2] = ws
+}
+
+game:GetService("ReplicatedStorage").UpdateWalkSpeed:FireServer(unpack(args))
+end
+end})
