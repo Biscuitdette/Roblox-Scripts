@@ -2,5 +2,5 @@
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
     Title = "Biscuitdette Hub";
-    Text = "Script presque fini ! La publication arrivera le 12-13-14 février !";
+    Text = "Script presque fini ! La publication arrivera le 12-13-14 Février !";
 })
