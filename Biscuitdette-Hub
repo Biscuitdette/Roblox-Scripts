@@ -1,3 +1,5 @@
+--Made by Biscuitdette#0001
+
 game:GetService("StarterGui"):SetCore("SendNotification",{
     Title = "Biscuitdette Hub";
     Text = "Script presque fini ! La publication arrivera le 19 février à 10h00 !";
