@@ -1,9 +1,10 @@
+--Fait par Biscuitdette#0001
+--GUI to Lua v1.2
+
+
 local library = {}
 local libalive = true
 local holdingmouse = false
-
--- 17,856 pastebin views
--- as of 1/29/2023 @ 6:30 CST
 
 local plr = game:GetService("Players").LocalPlayer
 local mouse = plr:GetMouse()
