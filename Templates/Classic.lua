@@ -1,6 +1,4 @@
 --Fait par Biscuitdette#0001
---GUI to Lua v1.2
-
 
 local library = {}
 local libalive = true
