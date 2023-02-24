@@ -9,19 +9,6 @@ if game.PlaceId ~= 6839171747 or game.ReplicatedStorage.GameData.Floor.Value ~= 
 	Sound.Volume = 5
 	Sound.PlayOnRemove = true
 	Sound:Destroy()
-	
-	return
-elseif workspace:FindFirstChild("PathFindPartsFolder") then
-	game.StarterGui:SetCore("SendNotification", { Title = "Warning"; Text = "If you are having issues and the bot is broken, please contact me! geodude#2619" })
-	
-	local Sound = Instance.new("Sound")
-	Sound.Parent = game.SoundService
-	Sound.SoundId = "rbxassetid://550209561"
-	Sound.Volume = 5
-	Sound.PlayOnRemove = true
-	Sound:Destroy()
-
-	return
 end
 
 local PathfindingService = game:GetService("PathfindingService")
