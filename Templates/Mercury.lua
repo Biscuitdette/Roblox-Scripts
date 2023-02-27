@@ -899,7 +899,7 @@ function Library:create(options)
 	creditsTab:credit{Name = "Biscuitdette", Description = "Developpeur", Discord = "Biscuitdette#0001"}
 	creditsTab:credit{Name = "C3pitain", Description = "Testeur", Discord = "Dwalen#0237"}
 	creditsTab:credit{Name = "Lopotichat", Description = "Testeur", Discord = "lopotichat#7936"}
-        creditsTab:credit{Name = "Lopotichat", Description = "GitHub", GitHub = "https://github.com/Biscuitdette"}
+        creditsTab:credit{Name = "GitHub", Description = "L'endroit de mes publications", GitHub = "https://github.com/Biscuitdette"}
 
 	return mt
 end
