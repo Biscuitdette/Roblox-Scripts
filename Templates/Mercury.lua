@@ -860,8 +860,8 @@ function Library:create(options)
 	settingsTab:_theme_selector()
 
 	settingsTab:keybind{
-		Name = "Toggle Key",
-		Description = "Veuillez entrer une keybind pour masquer/apparaitre le script.",
+		Name = "Affichage de l'interface",
+		Description = "Veuillez entrer une KeyBind pour masquer/apparaitre l'interface (seulement pc).",
 		Keybind = Enum.KeyCode.Delete,
 		Callback = function()
 			self.Toggled = not self.Toggled
@@ -879,8 +879,8 @@ function Library:create(options)
 	}
 
 	settingsTab:slider{
-		Name = "Vitesse de glissement de l'interface",
-		Description = "À quel point le glissement a l'air fluide.",
+		Name = "Fluidité du glissement de l'interface",
+		Description = "À quel point que quand vous glisserez sa sera tellement fluide.",
 		Max = 20,
 		Default = 14,
 		Callback = function(value)
