@@ -862,7 +862,7 @@ function Library:create(options)
 	settingsTab:keybind{
 		Name = "Affichage de l'interface",
 		Description = "Veuillez entrer une KeyBind pour masquer/apparaitre l'interface (seulement pc).",
-		Keybind = Enum.KeyCode.Delete,
+		Keybind = Enum.KeyCode.Alt,
 		Callback = function()
 			self.Toggled = not self.Toggled
 			Library:show(self.Toggled)
