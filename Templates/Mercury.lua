@@ -870,7 +870,7 @@ function Library:create(options)
 	}
 
 	settingsTab:toggle{
-		Name = "Verrouillage du glissement",
+		Name = "Verrouillage du glissement de l'interface",
 		Description = "Assure que vous ne pouvez pas glisser l'interface en dehors de la fenêtre.",
 		StartingState = false,
 		Callback = function(state)
