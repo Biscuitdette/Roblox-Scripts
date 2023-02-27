@@ -872,7 +872,7 @@ function Library:create(options)
 	settingsTab:toggle{
 		Name = "Verrouiller le glissement",
 		Description = "Assure que vous ne pouvez pas faire glisser l'interface en dehors de la fenêtre.",
-		StartingState = false,
+		StartingState = true,
 		Callback = function(state)
 			Library.LockDragging = state
 		end,
