@@ -870,17 +870,17 @@ function Library:create(options)
 	}
 
 	settingsTab:toggle{
-		Name = "Lock Dragging",
-		Description = "Makes sure you can't drag the UI outside of the window.",
-		StartingState = true,
+		Name = "Verrouiller le glissement",
+		Description = "Assure que vous ne pouvez pas faire glisser l'interface en dehors de la fenêtre.",
+		StartingState = false,
 		Callback = function(state)
 			Library.LockDragging = state
 		end,
 	}
 
 	settingsTab:slider{
-		Name = "UI Drag Speed",
-		Description = "How smooth the dragging looks.",
+		Name = "Vitesse de glissement de l'interface",
+		Description = "À quel point le glissement a l'air fluide.",
 		Max = 20,
 		Default = 14,
 		Callback = function(value)
