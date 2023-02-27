@@ -872,7 +872,7 @@ function Library:create(options)
 	settingsTab:toggle{
 		Name = "Verrouiller le glissement",
 		Description = "Assure que vous ne pouvez pas faire glisser l'interface en dehors de la fenêtre.",
-		StartingState = true,
+		StartingState = false,
 		Callback = function(state)
 			Library.LockDragging = state
 		end,
@@ -889,7 +889,7 @@ function Library:create(options)
 	}
 
 	local creditsTab = Library.tab(mt, {
-		Name = "Credits",
+		Name = "Crédits",
 		Internal = creditsTabIcon,
 		Icon = "http://www.roblox.com/asset/?id=8577523456"
 	})
