@@ -718,7 +718,7 @@ function Library:create(options)
 			selectedTab = homeButton
 			homePage.Visible = true
 			homeButton.BackgroundTransparency = 0
-			Library.UrlLabel.Text = Library.Url .. "/home"
+			Library.UrlLabel.Text = Library.Url .. "/Accueil"
 		end)
 	end
 
