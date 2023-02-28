@@ -862,7 +862,7 @@ function Library:create(options)
 	settingsTab:keybind{
 		Name = "Affichage de l'interface",
 		Description = "Veuillez entrer une KeyBind pour masquer/apparaitre l'interface.",
-		Keybind = Enum.KeyCode.Delete,
+		Keybind = Enum.KeyCode.Ctrl,
 		Callback = function()
 			self.Toggled = not self.Toggled
 			Library:show(self.Toggled)
@@ -899,7 +899,6 @@ function Library:create(options)
 	creditsTab:credit{Name = "Biscuitdette", Description = "Développeur", Discord = "Biscuitdette#0001"}
 	creditsTab:credit{Name = "C3pitain", Description = "Testeur", Discord = "Dwalen#0237"}
 	creditsTab:credit{Name = "Lopotichat", Description = "Testeur", Discord = "lopotichat#7936"}
-        creditsTab:credit{Name = "GitHub", Description = "L'endroit de mes publications", GitHub = "https://github.com/Biscuitdette"}
 
 	return mt
 end
