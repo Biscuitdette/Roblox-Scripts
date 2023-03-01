@@ -246,7 +246,7 @@ function Library:object(class, properties)
 
 	function methods:tooltip(text)
 		local tooltipContainer = methods:object("TextLabel", {
-			Thèmes = {
+			Theme = {
 				BackgroundColor3 = {"Main", 10},
 				TextColor3 = {"WeakText"}
 			},
