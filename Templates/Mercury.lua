@@ -896,7 +896,7 @@ function Library:create(options)
 
 	rawset(mt, "creditsContainer", creditsTab.container)
 
-	creditsTab:credit{Name = "Biscuitdette", Description = "Développeur", Discord = "Biscuitdette#0001", V3rmillion = "Biscuitdette"}
+	creditsTab:credit{Name = "Biscuitdette", Description = "Développeur", Discord = "Biscuitdette#0001"}
 	creditsTab:credit{Name = "C3pitain", Description = "Testeur", Discord = "Dwalen#0237"}
 	creditsTab:credit{Name = "Lopotichat", Description = "Testeur", Discord = "lopotichat#7936"}
 
@@ -2835,7 +2835,7 @@ function Library:credit(options)
 				Theme = {BackgroundColor3 = {"Main", 10}}
 			}):round(5):tooltip("Copier")
 			local v3rmillion = v3rmillionContainer:object("ImageLabel", {
-				Image = "http://www.roblox.com/asset/?id=11965755499",
+				Image = "http://www.roblox.com/asset/?id=8594086769",
 				Size = UDim2.new(1, -4, 1, -4),
 				Centered = true,
 				BackgroundTransparency = 1
