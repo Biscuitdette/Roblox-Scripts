@@ -2835,7 +2835,7 @@ function Library:credit(options)
 				Theme = {BackgroundColor3 = {"Main", 10}}
 			}):round(5):tooltip("Copier")
 			local v3rmillion = v3rmillionContainer:object("ImageLabel", {
-				Image = "http://www.roblox.com/asset/?id=8594086769",
+				Image = "http://www.roblox.com/asset/?id=11965755499",
 				Size = UDim2.new(1, -4, 1, -4),
 				Centered = true,
 				BackgroundTransparency = 1
